@@ -29,7 +29,7 @@ Users should be able to:
 
 
 <p align="center">
-  <img src="/resources/desktopss.png" alt="project screenshot desktop" title="Desktop Screenshot">
+  <img src="/resources/desktopssorder.png" alt="project screenshot desktop" title="Desktop Screenshot">
   <img src="/resources/mobilessorder.png" alt="project screenshot mobile" title="Mobile Screenshot">
 </p>
 
