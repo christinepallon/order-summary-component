@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    outline: none;
+}
+
+
+body {
+    background: url("pattern-background-mobile.svg"),hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+    background-color: white;
+    margin: 1em;
+    display: flex;
+    flex-flow: column;
+    border-radius: 0.75em;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 27rem;
+}
+
+.illustration {
+    border-top-left-radius: 0.75em;
+    border-top-right-radius: 0.75em;
+}
+
+.summary {
+    text-align: center;
+    font-weight: 900;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    font-size: 1.5rem;
+    color: hsl(223, 47%, 23%);
+}
+
+.message {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    line-height: 1.5em;
+}
+
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0.75em;
+    display: flex;
+    width: fit-content;
+    align-self: center;
+    padding: 1.25em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.plan-name {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.plan-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 2.5em;
+}
+
+.plan-price {
+    color: hsl(224, 23%, 55%);
+}
+
+.change {
+    margin: auto;
+    font-weight: 900;
+}
+
+.change, a:active {
+    color: hsl(245, 75%, 52%);
+    opacity: .8;
+}
+
+a {
+    cursor: pointer;
+}
+
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    align-self: center;
+    padding: .75em 5em;
+    border-radius: 0.75em;
+    box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+    font-size: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
+    opacity: 1;
+    transition: all .15s ease;
+    
+}
+
+.payment:active, .payment:hover {
+    opacity: .8;
+}   
+
+.cancel {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    align-self: center;
+    font-weight: 900;
+    padding: 1.5em 1.5em 3em 1.5em;
+}
+
+.cancel:active, .cancel:hover {
+    color: black;
+    opacity: .8;
+    transition: all .15s ease;
+}
+
+
+@media (min-width: 450px) {
+
+    body {
+      background: url("pattern-background-desktop.svg"),hsl(225, 100%, 94%);
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .summary {
+        font-size: 1.7rem;
+        padding-top: 1.7em;
+        padding-bottom: .7em;
+      }
+}
